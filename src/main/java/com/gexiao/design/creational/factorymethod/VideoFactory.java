@@ -1,6 +1,7 @@
-package com.gexiao.design.creational.simplefactory;
+package com.gexiao.design.creational.factorymethod;
 
-public class VideoFactory {
+public abstract   class VideoFactory {
+    public abstract Video getVideo();
     /*public static Video getVideo(String type) {
         switch (type) {
             case "java":
@@ -12,7 +13,7 @@ public class VideoFactory {
         return null;
     }*/
 
-   public static Video getVideo(Class c){
+/*   public static Video getVideo(Class c){
        Video video =null;
        try {
            video = (Video) Class.forName(c.getName()).newInstance();
@@ -24,5 +25,5 @@ public class VideoFactory {
            e.printStackTrace();
        }
        return video;
-   }
+   }*/
 }

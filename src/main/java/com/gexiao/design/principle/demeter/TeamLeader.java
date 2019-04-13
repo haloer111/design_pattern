@@ -5,7 +5,7 @@ import java.util.List;
 
 public class TeamLeader {
     public void checkNumberOfCourse(){
-        List<Course> courses  =new ArrayList<>();
+        List<Course> courses  =new ArrayList<Course>();
         for (int i = 0; i < 20; i++) {
             courses.add(new Course());
         }
